@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Visualization Dashboard</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    #brand { color: white;
+    }
+    .box1 {
+  /* Absolute Position */
+  position: absolute;
+  top:0px;
+  left: 80px;
+  bottom: 20px;
+  width: 150px;
+  height: 60px;
+  background:green;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  }
+  .box8 {
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    margin-left: 50px;
+    background: white;
+     }
+
+    .box4 {
+        background: white;
+        position: relative;
+        padding: 20px 20px 20px 20px;
+        margin-right:10px;
+
+
+            
+    }
+    .sum_style {
+        color:green;
+        font-size: 36px;
+        font-weight: bold;
+  }
+  .visual_style {
+      font-size: 26px;
+      color: green;
+      font-weight: bold;
+  }
+
+    .text_font {
+        font-size: 18px;
+    }
+    .container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0;
+    margin-left: 0;
+}
+.foot {
+    background-color:  rgb(99, 96, 96);
+    position: absolute;
+    height: 40px;
+    width:100%;
+    border: 3px solid green;
+                
+}
+.bottom_style {
+    color: white;
+    text-align: center;
+}
+    </style>
+</head>
+<body style="background-color: lightgrey;">
+    <div class ="container-full">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class = "row">
+                <div class="navbar-header" style="height: 45px">
+                    <a id ="brand" class="navbar-brand box1" style="position: absolute" href="#">Lattitude</a>
+                    <ul class="navbar-nav navbar-right" style="position: absolute; right: 10px">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Max Temperature</a>
+                                <a class="dropdown-item" href="#">Humidity</a>
+                                <a class="dropdown-item" href="#">Cloudiness</a>
+                                <a class="dropdown-item" href="#">Wind Speed</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+   <br>
+   <br>
+    <!--Normally these medium columns go full wide on small screen sizes-->
+    <div class="container-full">
+        <div class="row">
+            <div class="col-md-8">
+                <section class="box8">
+                    <p class="sum_style">Summary: Lattitude vs. X</p>
+                    <hr>
+                    <img src="Images/Lat_Temp.png" align = "left" style="width:220px;height:180px;" hspace="40" vspace="20"/>
+                    <p class="text_font">The purpose of this project was to analyze how whether changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p> 
+                    <p class="text_font">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations withnessed.</p>
+                </section>
+                </div>
+         
+            <div class="col-md-4">
+                    <section class ="box4">
+                        <p class="visual_style">Visualizations</p>
+                        <hr>
+                        <a target="_blank" href="Images/Lat_Temp.png"><img src="Images/Lat_Temp.png" title ="Latitude vs Temperature" alt="Latitude vs Temperature" height="140px" width="160px"></a>
+                        <a target="_blank" href="Images/Lat_Humid.png"><img src="Images/Lat_Humid.png" title ="Latitude vs Humidity" alt ="Latitude vs Humidity" height="140px" width="160px"></a>
+                        <a target="_blank" href="Images/Lat_Cloud.png"><img src="Images/Lat_Cloud.png" title ="Latitude vs Cloudiness" alt="Latitude vs Cloudiness" height="140px" width="160px"></a>
+                        <a target="_blank" href="Images/Lat_Wind.png"><img src="Images/Lat_Wind.png" title ="Latitude vs Windiness" alt="Latitude vs Windiness" height="140px" width="160px"></a>
+                    </section>
+               
+            </div>
+        </div>
+    </div>  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr size="50" color ="green">
+    <div class ="container-full">
+        <div class = "row ">
+            <div class = "col-md-12 col-12">
+                <section>
+                    <p class="bottom_style foot"> &#169 Copyright Coding Bootcamp 2017 </p>
+                </section>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
