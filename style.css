@@ -1,9 +1,90 @@
-/*.box {
-  min-height: 50px;
-  padding: 5px;
-  margin: 5px;
-  font-weight: 800;
+#brand { 
+  color: white;
   }
-*/
-.colorbutton {background: white;
-              color: black;}
+  .box1 {
+  position: absolute;
+  top:0px;
+  left: 80px;
+  bottom: 20px;
+  width: 150px;
+  height: 60px;
+  background:green;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  }
+  .box8 {
+  position: relative;
+  padding: 20px 20px 20px 20px;
+  background: white;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right:15px;
+  }
+
+  .box4 {
+  background: white;
+  position: relative;
+  padding: 22px 22px 22px 22px;
+  margin-left: 15px;
+  margin-right:15px;
+  }
+
+  .sum_style {
+  color:green;
+  font-size: 36px;
+  font-weight: bold;
+  }
+
+  .visual_style {
+  font-size: 26px;
+  color: green;
+  font-weight: bold;
+  }
+
+  .text_font {
+  font-size: 18px;
+  }
+
+  .container {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 0;
+  margin-left: 0;
+  }
+  .foot {
+  background-color:  rgb(99, 96, 96);
+  position: absolute;
+  height: 40px;
+  width:100%;
+  border: 4px solid green;
+  text-align: center;
+  color: white;
+  }
+
+  .content_style{
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    background: white;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right:25px;
+  }
+.text {
+  color:green;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.table_position{
+  align-content: center;
+}
+.table_style{
+  position: relative;
+  padding: 40px 40px 40px 40px;
+  background: white;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right:25px;
